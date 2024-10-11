@@ -1,0 +1,7 @@
+export const Advice = [
+    "Research the agency's reputation: Do your research and check out the agency's website, portfolio, and reviews. Check if they have a good reputation in the industry and if they have a track record of successfully representing models.",
+    "Be wary of newspaper or online adverts: Advertisements that seem too good to be true often are. Legitimate modelling agencies do not ask for money upfront to create a portfolio or sign with them. Any agency that charges a joining fee or asks for money before any work is guaranteed is not a legitimate agency.",
+    "Read contracts carefully: Before signing any contract, make sure you understand its contents and seek professional advice if necessary. If you are not comfortable with the terms, don't feel pressured to sign it.",
+    "Build a healthy relationship with the agency: If you do choose to work with an agency, it's essential to maintain open lines of communication and to always be present during shoots and meetings to ensure the safety and comfort of your child.",
+    "Trust your instincts: If something seems off or you feel uncomfortable, don't hesitate to say no. Always prioritize the safety and well-being of yourself and your child.",
+]
