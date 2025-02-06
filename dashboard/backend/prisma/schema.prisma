@@ -1,0 +1,42 @@
+generator client {
+  provider   = "prisma-client-js"
+  engineType = "library"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id       String   @id @default(uuid())
+  email    String   @unique
+  name     String?
+  password String
+}
+
+model Product {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String
+  price       Float
+  size        String? // Size of the product (e.g., 'Large', 'Medium')
+  color       String? // Color of the product
+  brandName   String? // Brand name of the product
+  category    String?
+  images      Image[] // One-to-many relation with Image
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Image {
+  id          String   @id @default(uuid())
+  url         String
+  altText     String? // Optional alternative text for the image
+  productId   Int?    // Foreign key to the Product model
+  caption     String? // Optional caption for the image
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  product     Product? @relation(fields: [productId], references: [id])
+}

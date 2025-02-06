@@ -1,0 +1,11 @@
+name = "backend"
+compatibility_date = "2024-09-01"
+
+[env.dev]
+[vars]
+DATABASE_URL = "prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiMGExMjU5YWItNWRjYy00MWY0LTllYTctMjM1MGQyMWY3ZWQ4IiwidGVuYW50X2lkIjoiYzVlNTJiOGRjNTI1MmMzNmEyYTIzYzNlMTY0OGVhOTQ4NWZmZjcwOTkwYTM3ODcwMzVjYWIxMmRmM2ExODc5ZCIsImludGVybmFsX3NlY3JldCI6ImU5MWRmZDZkLWYwYWYtNDQyMS04NDRkLWU0MDJjZmUyZTc1ZSJ9.ldX5gutjB4bum-nlls02Iba9kG2Yu-MmYGA5D5FbreE"
+JWT_SECRET = "harsh-secret" 
+
+[[r2_buckets]]
+binding = 'HONO_R2_UPLOAD'
+bucket_name = 'diorama'

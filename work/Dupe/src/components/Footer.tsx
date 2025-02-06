@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import FooterBoy from '../assets/Images/FooterBoy.png'
 import FooterGirl from '../assets/Images/FooterGirl.png'
 import Logo from '../assets/Logo.svg'
@@ -33,12 +34,24 @@ function Footer() {
                         <div className="text-white">
                             <h1 className="font-bold text-[2.2vw] md:text-[2vw] md:mt-10 xl:mt-0 xl:text-[1.7vw] mb-1 md:w-[12vw] xl:mb-3">Quick Links</h1>
                             <div className="flex flex-col">
-                                <a href="/services"  className="md:mb-3 mb-1 text-[2vw] md:text-[1.2vw] font-extralight">Our Services</a>
-                                <a href="/blogs"  className="md:mb-3 mb-1 text-[2vw] md:text-[1.2vw] font-extralight">Blogs</a>
-                                <a href="/faqs"  className="md:mb-3 mb-1 text-[2vw] md:text-[1.2vw] font-extralight">FAQs</a>
-                                <a href="/testimonial"  className="md:mb-3 mb-1 text-[2vw] md:text-[1.2vw] font-extralight">Testimonials</a>
-                                <a href="modelling-london"  className="md:mb-3 mb-1 text-[2vw] md:text-[1.2vw] font-extralight">Modelling London</a>
-                                <a href="/advice-for-parents"  className="md:mb-3 mb-1 text-[2vw] md:text-[1.2vw] font-extralight">Advice For Parents</a>
+                                <Link to={"/services"}>
+                                    <a  className="md:mb-3 mb-1 text-[2vw] md:text-[1.2vw] font-extralight">Our Services</a>
+                                </Link>
+                                <Link to={"/blogs"}>
+                                    <a className="md:mb-3 mb-1 text-[2vw] md:text-[1.2vw] font-extralight">Blogs</a>
+                                </Link>
+                                <Link to={"/faqs"}>
+                                    <a className="md:mb-3 mb-1 text-[2vw] md:text-[1.2vw] font-extralight">FAQs</a>
+                                </Link>
+                                <Link to={"/testimonial"}>
+                                    <a className="md:mb-3 mb-1 text-[2vw] md:text-[1.2vw] font-extralight">Testimonials</a>
+                                </Link>
+                                <Link to={"/modelling-london"}>
+                                    <a className="md:mb-3 mb-1 text-[2vw] md:text-[1.2vw] font-extralight">Modelling London</a>
+                                </Link>
+                                <Link to={"/advice-for-parents"}>
+                                    <a  className="md:mb-3 mb-1 text-[2vw] md:text-[1.2vw] font-extralight">Advice For Parents</a>
+                                </Link>
                             </div>
                         </div>
 
